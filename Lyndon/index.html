@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lynd-On</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <div id="preloader">
+    <div class="loader-ring"></div>
+  </div>
+
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">lynd-On<span class="logo-dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button id="menuToggle" class="menu-btn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-title">
+        <span class="title-line">Lyndon</span>
+        <span class="title-line accent">De Juan</span>
+      </h1>
+      <div class="hero-role">
+        <span class="role-static">I build</span>
+        <span class="role-dynamic" id="typewriter"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc">
+        I'm a Software Freelancer passionate about creating modern and user-friendly websites &amp; applications. 
+        I enjoy learning new technologies and building projects that solve real problems.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-social">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Turning ideas into <span class="accent">digital reality</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <div class="image-frame">
+            <div class="image-placeholder">
+              <i class="fas fa-user-astronaut"></i>
+            </div>
+          </div>
+          <div class="image-badge">
+            <span class="badge-number">2+</span>
+            <span class="badge-text">Years<br>Experience</span>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <h3>A passionate designer &amp; developer</h3>
+          <p>
+            I'm a passionate Software Developer who enjoys creating modern, responsive, &amp; 
+            user-friendly applications and websites. I love turning ideas into real solutions 
+            through clean code and continuous learning
+          </p>
+          <p>
+            With experience in web development, database management, and desktop applications, 
+            I am always eager to improve my skills and explore new technologies. My goal is to 
+            build innovative and efficient systems that provide great user experiences.
+          </p>
+          
+          <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Skills</span>
+        <h2 class="section-title">Tools &amp; Technologies I <span class="accent">Master</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="skills-content">
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+            <h4>HTML5</h4>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="95"></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+            <h4>CSS3</h4>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="92"></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon"><i class="fab fa-js"></i></div>
+            <h4>JavaScript</h4>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="75"></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon">
+            <i class="fab fa-microsoft"></i>
+            </div>
+            <h4>.Net Framework</h4>
+            <div class="skill-bar">
+                <div class="skill-progress" data-progress="90"></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon">
+                <i class="fas fa-database"></i>
+            </div>
+            <h4>SQL Queries</h4>
+            <div class="skill-bar">
+                <div class="skill-progress" data-progress="80"></div>
+            </div>
+          </div>
+          
+          <div class="skill-card reveal">
+            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+            <h4>Git</h4>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="82"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Featured <span class="accent">projects</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="projects-grid">
+        
+        <div class="project-card reveal">
+          <div class="project-image" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <i class="fas fa-desktop project-icon"></i>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Timekeeper Application</span>
+            <h3>Welcome!</h3>
+            <p>Welcome! is a user-based Timekeeper application built with VB.NET that enables users
+              to securely log in and track their attendance through Daily Time Records (DTR).</p>            
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-image" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <i class="fas fa-laptop-code project-icon"></i>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Freelance Personal Website</span>
+            <h3>lynd-On.</h3>
+            <p>lynd-on is my personal freelance website where I showcase my skills, projects, 
+              &amp; services as a Software Developer. It highlights my experience and makes it easy 
+              for clients or collaborators to contact me.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-image" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <i class="fas fa-mountain project-icon"></i>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Savings Tracker</span>
+            <h3>!Save </h3>
+            <p>is a simple and useful application that helps users track their savings and manage their money goals. 
+              It allows users to record their income, expenses, and savings progress to help them build better 
+              financial habits.</p>
+          </div>
+        </div>
+
+<!--============================================= OPENING SOON =============================================-->
+  <!-- <section id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">What people <span class="accent">say</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="testimonials-slider">
+        <div class="testimonial-card reveal active">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"Alex transformed our outdated website into a modern, fast, and beautiful platform. Our conversions increased by 40% within the first month."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: #667eea;">S</div>
+            <div>
+              <strong>Sarah Chen</strong>
+              <span>CEO, TechVentures</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"Working with Alex was an absolute pleasure. The attention to detail and the level of craftsmanship in every component is remarkable."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: #f5576c;">M</div>
+            <div>
+              <strong>Marcus Webb</strong>
+              <span>Product Designer, Layer</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"Alex delivered ahead of schedule and exceeded our expectations. The codebase is clean, well-documented, and a joy to work with."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: #4facfe;">J</div>
+            <div>
+              <strong>Julia Kim</strong>
+              <span>CTO, DataFlow</span>
+            </div>
+          </div>
+        </div>
+        <div class="slider-dots"></div>
+      </div>
+    </div>
+-->
+<!--============================================= END =============================================-->
+
+  </section> 
+
+
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info reveal">
+          <span class="section-tag">Contact</span>
+          <h2>Let's create something <span class="accent">amazing</span></h2>
+          <p>Have a project in mind? Let's talk about how we can bring your ideas to life.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Email</strong>
+                <span>lyndondeone@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <strong>Phone</strong>
+                <span>(+69)995-483-8995</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Location</strong>
+                <span>Binondo, Manila</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required>
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your Email" required>
+              <label for="email">Your Email</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" placeholder="Subject">
+            <label for="subject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">lynd-On<span class="logo-dot">.</span></a>
+        <p>Designing &amp; building digital experiences that matter.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 lynd-On. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
