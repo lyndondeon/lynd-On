@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iSave | Dashboard</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<div class="app-container">
+
+
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="mobile-menu-header">
+            <div class="sidebar-brand">
+                <div class="brand-logo">i</div>
+                <div class="brand-name">
+                    <h1>iSave</h1>
+                </div>
+            </div>
+
+            <button type="button" id="closeSidebar" class="close-sidebar">
+                &times;
+            </button>
+        </div>
+
+        <div class="sidebar-divider"></div>
+
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-link active">
+                <span>⌂</span> Dashboard
+            </a>
+
+            <a href="#" class="nav-link">
+                <span>▦</span> Transactions
+            </a>
+
+            <a href="#" class="nav-link">
+                <span>▥</span> Reports
+            </a>
+
+            <a href="#" class="nav-link">
+                <span>⚙</span> Settings
+            </a>
+
+            <a href="#" class="nav-link">
+                <span>⇥</span> Logout
+            </a>
+        </nav>
+
+        <div class="sidebar-quote">
+            <p>"Small steps today, big savings tomorrow."</p>
+        </div>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-area">
+
+        <header class="navbar">
+
+            <!-- MOBILE MENU BUTTON -->
+            <button type="button" id="hamburgerBtn" class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="header-title">
+                <span class="header-label">PERSONAL FINANCE MANAGER</span>
+                <h2>Dashboard</h2>
+            </div>
+
+            <div class="nav-right">
+                <span class="system-label">Personal Database</span>
+                <div class="user-avatar">U</div>
+            </div>
+
+        </header>
+
+        <main class="main-content">
+
+            <!-- WELCOME -->
+            <section class="welcome-banner">
+                <div>
+                    <span class="eyebrow">OVERVIEW</span>
+                    <h2>Welcome back!</h2>
+                    <p>Track. Save. Achieve your goals.</p>
+                </div>
+                <div class="welcome-decoration">✦</div>
+            </section>
+
+            <!-- CONNECTION -->
+            <section class="connection-panel">
+                <div class="connection-info">
+                    <span id="connectionStatus" class="connection-status">
+                        <span class="status-dot"></span>
+                        <span id="statusText">Not Connected</span>
+                    </span>
+                    <p>Connect to your personal database to load your records.</p>
+                </div>
+
+                <button id="btnConnect" class="connect-button">
+                    Connect Database
+                </button>
+            </section>
+
+            <!-- SUMMARY CARDS -->
+            <section class="summary-grid">
+
+                <div class="summary-card">
+                    <div class="summary-icon">₱</div>
+                    <div>
+                        <span>Total Balance</span>
+                        <h3>₱0.00</h3>
+                        <small>Available balance</small>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon">↓</div>
+                    <div>
+                        <span>Total Income</span>
+                        <h3>₱0.00</h3>
+                        <small>Money received</small>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon">↑</div>
+                    <div>
+                        <span>Total Expenses</span>
+                        <h3>₱0.00</h3>
+                        <small>Money spent</small>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon">▦</div>
+                    <div>
+                        <span>Total Records</span>
+                        <h3 id="totalRecords">00</h3>
+                        <small>Database transactions</small>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- DATABASE TABLE -->
+            <section class="database-section">
+
+                <div class="database-header">
+                    <div>
+                        <span class="eyebrow">DATABASE MANAGEMENT</span>
+                        <h3>Recent Transactions</h3>
+                        <p>Your personal financial records</p>
+                    </div>
+
+                    <div class="table-actions">
+                        <span class="record-count">
+                            <span class="record-icon">▤</span>
+                            All Records
+                        </span>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <table class="data-grid">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Logs</th>
+                                <th>Date</th>
+                                <th>Payroll</th>
+                                <th>Sender</th>
+                                <th>Amount</th>
+                                <th>Receiver</th>
+                                <th>Purpose/Definition</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="transactionTableBody">
+                            <tr>
+                                <td colspan="7" class="empty-state">
+                                    Click Connect Database to load transactions.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-footer">
+                    <span>Personal transaction records</span>
+                    <div class="pagination">
+                        <button disabled>‹</button>
+                        <button class="page-active">1</button>
+                        <button disabled>›</button>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- SAVINGS GOAL -->
+            <section class="savings-banner">
+                <div class="savings-icon">◎</div>
+                <div class="savings-text">
+                    <h3>Keep building your future.</h3>
+                    <p>Every peso saved brings you closer to your goals.</p>
+                </div>
+                <div class="savings-tag">SAVE SMARTER</div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <span>iSave Database Management System</span>
+            <span>Simple. Organized. Secure.</span>
+        </footer>
+
+    </div>
+</div>
+
+<!-- EXISTING LIBRARIES AND SCRIPT -->
+<script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="Script.js"></script>
+
+</body>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const hamburgerBtn = document.getElementById("hamburgerBtn");
+    const closeSidebarBtn = document.getElementById("closeSidebar");
+    const sidebar = document.getElementById("sidebar");
+
+    if (!hamburgerBtn || !closeSidebarBtn || !sidebar) {
+        console.error("Sidebar elements not found.");
+        return;
+    }
+
+    function openSidebar() {
+        sidebar.classList.add("open");
+        document.body.classList.add("sidebar-open");
+    }
+
+    function closeSidebar() {
+        sidebar.classList.remove("open");
+        document.body.classList.remove("sidebar-open");
+    }
+
+    hamburgerBtn.addEventListener("click", openSidebar);
+    closeSidebarBtn.addEventListener("click", closeSidebar);
+
+    sidebar.querySelectorAll(".nav-link").forEach(function (link) {
+        link.addEventListener("click", closeSidebar);
+    });
+
+    window.addEventListener("resize", function () {
+        if (window.innerWidth >= 650) {
+            closeSidebar();
+        }
+    });
+
+});
+</script>
+
+</html>
